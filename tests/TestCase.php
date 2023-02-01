@@ -2,9 +2,9 @@
 
 namespace Alnutile\Fixtures\Tests;
 
+use Alnutile\Fixtures\FixturesServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Alnutile\Fixtures\FixturesServiceProvider;
 
 class TestCase extends Orchestra
 {

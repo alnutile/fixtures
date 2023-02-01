@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\File;
 if (! function_exists('put_fixture')) {
     function put_fixture($file_name, $content = [], $json = true)
     {
-        if(!File::exists(base_path('tests/fixtures'))) {
+        if (! File::exists(base_path('tests/fixtures'))) {
             File::makeDirectory(base_path('tests/fixtures'));
         }
 

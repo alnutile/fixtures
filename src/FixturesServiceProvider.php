@@ -2,9 +2,9 @@
 
 namespace Alnutile\Fixtures;
 
+use Alnutile\Fixtures\Commands\FixturesCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Alnutile\Fixtures\Commands\FixturesCommand;
 
 class FixturesServiceProvider extends PackageServiceProvider
 {
