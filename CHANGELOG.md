@@ -1,3 +1,4 @@
 # Changelog
 
-All notable changes to `fixtures` will be documented in this file.
+## 0.0.1 2020-02-01 
+First release
