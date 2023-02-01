@@ -36,7 +36,10 @@
         "psr-4": {
             "Alnutile\\Fixtures\\": "src",
             "Alnutile\\Fixtures\\Database\\Factories\\": "database/factories"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
