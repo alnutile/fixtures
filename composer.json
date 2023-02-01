@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "alnutile/fixtures",
+    "description": "Help with saving and getting JSON files for testing APIs",
     "keywords": [
-        ":vendor_name",
+        "alnutile",
         "laravel",
-        ":package_slug"
+        "fixtures"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/alnutile/fixtures",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Alfred Nutile",
+            "email": "me@alfrednutile.info",
             "role": "Developer"
         }
     ],
@@ -30,19 +30,21 @@
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
-        "phpunit/phpunit": "^9.5",
-        "spatie/laravel-ray": "^1.26"
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Alnutile\\Fixtures\\": "src",
+            "Alnutile\\Fixtures\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
-        }
+            "Alnutile\\Fixtures\\Tests\\": "tests"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "scripts": {
         "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
@@ -61,10 +63,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Alnutile\\Fixtures\\FixturesServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "Fixtures": "Alnutile\\Fixtures\\Facades\\Fixtures"
             }
         }
     },
