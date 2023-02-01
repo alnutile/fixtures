@@ -2,7 +2,6 @@
 
 namespace Alnutile\Fixtures;
 
-use Alnutile\Fixtures\Commands\FixturesCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -19,7 +18,6 @@ class FixturesServiceProvider extends PackageServiceProvider
             ->name('fixtures')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_fixtures_table')
-            ->hasCommand(FixturesCommand::class);
+            ->hasMigration('create_fixtures_table');
     }
 }
