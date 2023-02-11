@@ -56,6 +56,27 @@ You can install the package via composer:
 composer require alnutile/fixtures
 ```
 
+Then (since I can not figure out a way around this) add it to your composer.json file:
+
+```php 
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            //some stuff is here
+        },
+        "files": [
+            "vendor/alnutile/fixtures/src/helpers.php"
+        ]
+    },
+```
+
+The run:
+
+```bash 
+composer dump
+```
+
+
 ## Testing
 
 ```bash
